@@ -35,7 +35,6 @@ public class GlobalExceptionHandler implements Serializable {
         return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
     }
 
-
     @ExceptionHandler(Exception.class)
     public ResponseEntity<String> handleGenericException(Exception ex) {
         ex.printStackTrace();

@@ -34,7 +34,7 @@ public class Car implements Serializable {
     private Brand brand;
 
     @ManyToMany
-    @JoinTable(name = "car_accessory",
+    @JoinTable(name = "tb_car_accessory",
             joinColumns = @JoinColumn(name = "car_id"),
             inverseJoinColumns = @JoinColumn(name = "accessory_id"))
     private List<Accessory> accessories;
