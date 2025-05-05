@@ -1,0 +1,41 @@
+.dashboard-container {
+    padding: 20px;
+    font-family: sans-serif; // Fonte genérica
+  }
+  
+  h1 {
+    color: #333; // Cor escura para o título
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-content {
+    display: grid; // Usando CSS Grid para o layout das cartas
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // Colunas flexíveis, mínimo de 250px, preenchendo o espaço disponível
+    gap: 20px; // Espaço entre as cartas
+  }
+  
+  .dashboard-card {
+    background-color: #fff; // Fundo branco para as cartas
+    border: 1px solid #ddd; // Borda sutil
+    border-radius: 8px; // Cantos arredondados
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); // Sombra leve
+    display: flex; // Usando Flexbox para organizar o conteúdo dentro da carta
+    flex-direction: column; // Conteúdo em coluna
+  }
+  
+  .dashboard-card h2 {
+    margin-top: 0;
+    color: #555; // Cor para os títulos das cartas
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-card p {
+    color: #666; // Cor para o texto das cartas
+    margin-bottom: 5px;
+  }
+  
+  .dashboard-card ul {
+    padding-left: 20px;
+  }
